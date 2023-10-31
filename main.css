@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    max-height: 3.5vw;
+    overflow-y: hidden;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+nav #search{
+    width: 40%;
+    height: 4.5vmin;
+    /*border: 1px solid rgb(200, 200, 200);*/
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .8);;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: white;
+}
+#search form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    font-size: 2vmin;
+    background: transparent;
+}
+#search form input{
+    width: 80%;
+    border: none;
+    padding: 5px;
+    background: transparent;
+    color: white;
+}
+#search-suggestion{
+    position: absolute;
+    width: 40%;
+    background: rgb(71, 71, 71);
+    margin-top: 2.7vw;
+    border-radius: 5px;
+}
+#search-suggestion a{
+    padding: 5px;
+    color: rgb(242, 242, 242);
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+}
+#search-suggestion a:hover{
+    color: white;
+    background: rgb(81, 81, 81);
+}
+#search form button{
+    width: 10%;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+#search form input:focus, #search form button :focus{
+    outline: none;
+    border: none;
+}
+body{
+    padding: 10%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/pic3.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+}
+.top h2{
+    font-size: 6vmin;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 4px black;
+}
+.about h5{
+    font-size: 3.5vmin;
+    margin-top: 10%;
+    color: rgb(212, 212, 212);
+}
+.about h6{
+    margin-top: 5%;
+    font-size: 3vmin;
+    color: rgb(212, 212, 212);
+}
+.about h6 b{
+    color: white;
+}
+.modal-body{
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    background: white;
+    border: 4px ridge rgb(47, 47, 255);
+    box-shadow: 0 0 10px grey;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.modal-body .head{
+    width: 100%;
+    text-align: center;
+    font-size: 3vmin;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.modal-body a{
+    margin-top: 3vmin;
+    text-decoration: none;
+    margin-left: 40%;
+    text-align: center;
+}
+.modal-body a:hover{
+    text-decoration: underline;
+}
+.modal-body #close{
+    width: fit-content;
+    margin-left: 90%;
+    margin-bottom: 3vmin;
+}
+.modal-body .message{
+    display: none;
+}
+.signup, .login, .admin{
+    display: none;
+}
+.modal-body input, .modal-body button{
+    width: 100%;
+    margin-top: 3vmin;
+}
+.filter{
+    width: 50%;
+    background: transparent;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.filter form{
+    background-color: transparent;
+    width: 100%;
+}
+.filter form input, .filter form select, .filter form button{
+    margin-top: 3vmin;
+}
+.filter form button{
+    float: right;
+}
+#overall, #language, #physics, #biochem, #maths{
+    text-transform: uppercase;
+}
